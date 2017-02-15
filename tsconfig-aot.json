@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES5",
+    "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
@@ -14,7 +14,7 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es6",
+      "es2015",
       "dom"
     ],
     "types": [
@@ -31,6 +31,10 @@
     "example"
   ],
   "files": [
-    "src/index.ts"
-  ]
+    "./src/index.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./aot",
+    "strictMetadataEmit": true
+  }
 }

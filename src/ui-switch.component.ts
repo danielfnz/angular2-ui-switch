@@ -1,5 +1,4 @@
 
-import * as $ from "jquery";
 import { Component, Input, Output, EventEmitter, HostListener, forwardRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
@@ -166,9 +165,6 @@ export class UiSwitchComponent implements ControlValueAccessor {
 
     @HostListener('click')
     onToggle() {
-
-        console.log($("#ofir").length > 0);
-
         if (this.disabled) return;
         this.checked = !this.checked;
         this.change.emit(this.checked);
