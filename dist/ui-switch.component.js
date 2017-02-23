@@ -61,6 +61,7 @@ var UiSwitchComponent = (function () {
     });
     ;
     UiSwitchComponent.prototype.getColor = function (flag) {
+        if (flag === void 0) { flag = ''; }
         if (flag === 'borderColor')
             return this.defaultBoColor;
         if (flag === 'switchColor') {

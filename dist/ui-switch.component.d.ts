@@ -16,7 +16,7 @@ export declare class UiSwitchComponent implements ControlValueAccessor {
     switchColor: string;
     defaultBgColor: string;
     defaultBoColor: string;
-    getColor(flag: any): string;
+    getColor(flag?: string): string;
     onToggle(): void;
     writeValue(obj: any): void;
     registerOnChange(fn: any): void;
