@@ -19,7 +19,7 @@ const UI_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
   [class.switch-large]="size === 'large'"
   [class.switch-medium]="size === 'medium'"
   [class.switch-small]="size === 'small'"
-  [style.background-color]="getColor()"
+  [style.background-color]="#ffffff"
   [style.border-color]="getColor('borderColor')"
   >
   <small [style.background]="getColor('switchColor')">
